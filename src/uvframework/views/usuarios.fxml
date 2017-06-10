@@ -7,14 +7,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="332.0" prefWidth="523.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane id="AnchorPane" prefHeight="332.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Button layoutX="297.0" layoutY="245.0" mnemonicParsing="false" onAction="#RegresarBtnClick" prefHeight="34.0" prefWidth="73.0" text="Regresar" />
       <Button layoutX="185.0" layoutY="245.0" mnemonicParsing="false" onAction="#GuardarBtnClick" prefHeight="34.0" prefWidth="73.0" text="Guardar" />
-      <TextField fx:id="password" layoutX="170.0" layoutY="185.0" prefHeight="25.0" prefWidth="228.0" />
-      <TextField fx:id="user" layoutX="170.0" layoutY="147.0" prefHeight="25.0" prefWidth="228.0" />
-      <TextField fx:id="nombre" layoutX="170.0" layoutY="109.0" prefHeight="25.0" prefWidth="228.0" />
+      <TextField fx:id="txtPassword" layoutX="170.0" layoutY="185.0" prefHeight="25.0" prefWidth="228.0" />
+      <TextField fx:id="txtUser" layoutX="170.0" layoutY="147.0" prefHeight="25.0" prefWidth="228.0" />
+      <TextField fx:id="txtNombre" layoutX="170.0" layoutY="109.0" prefHeight="25.0" prefWidth="228.0" />
       <Label layoutX="93.0" layoutY="189.0" text="Contraseña" />
       <Label layoutX="94.0" layoutY="151.0" text="Usuario" />
       <Label layoutX="95.0" layoutY="113.0" text="Nombre" />
