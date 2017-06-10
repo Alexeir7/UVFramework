@@ -50,19 +50,6 @@ public class LoginViewController implements Initializable {
 
     }
 
-    @FXML
-    private void ListarBtnClick() {
-        try {
-            ResultSet rs = UsuariosModel.ImprimirUsuarios();
-
-            while (rs.next()) {
-                System.out.println(rs.getString("UsrUsr"));
-            }
-        } catch (SQLException ex) {
-            Logger.getLogger(LoginViewController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
