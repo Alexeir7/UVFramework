@@ -6,12 +6,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="260.0" prefWidth="386.0" stylesheets="@../assets/UVF.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uvframework.controllers.LoginViewController">
+<AnchorPane id="AnchorPane" prefHeight="331.0" prefWidth="386.0" stylesheets="@../assets/UVF.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uvframework.controllers.LoginViewController">
     <children>
-        <Button layoutX="29.0" layoutY="257.0" onAction="#LoginBtnClick" prefHeight="40.0" prefWidth="329.0" text="Login" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+        <Button layoutX="29.0" layoutY="257.0" onAction="#LoginBtnClick" prefHeight="40.0" prefWidth="329.0" text="Login" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
       <TextField fx:id="User" layoutX="20.0" layoutY="80.0" promptText="User" styleClass="inputs" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
       <PasswordField fx:id="Password" layoutX="20.0" layoutY="119.0" promptText="Password" styleClass="inputs" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
       <CheckBox fx:id="Recordar" layoutX="20.0" layoutY="164.0" mnemonicParsing="false" text="Recordar Datos" AnchorPane.leftAnchor="20.0" />
       <Label layoutX="20.0" layoutY="32.0" text="Mi APP" />
+      <Button layoutX="20.0" layoutY="222.0" mnemonicParsing="false" onAction="#ListarBtnClick" text="Listar Usuarios" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" />
     </children>
 </AnchorPane>
