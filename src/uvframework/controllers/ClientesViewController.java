@@ -5,6 +5,10 @@
  */
 package uvframework.controllers;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import uvframework.models.ClientesModel;
@@ -28,6 +32,11 @@ public class ClientesViewController {
     private void RegresarBtnClick(){
         WindowsManager.getStage("/clientes").close();
         WindowsManager.getStage("/menu").show();
+        txtIdentidad.setText("");
+        txtNombre.setText("");
+        txtTelefono.setText("");
+        txtDireccion.setText("");
+        txtCorreo.setText("");
     }
     
     @FXML
@@ -51,7 +60,16 @@ public class ClientesViewController {
     
     @FXML
     private void ListarBtnClick(){
-        System.out.println("listar");
+         try {
+            ResultSet rs=ClientesModel.listarClientes();
+            while(rs.next()){
+                System.out.println(rs.getString("nombreCliente"));
+                System.out.println(rs.getString("telefono"));
+                System.out.println(rs.getString("correo"));
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(ClientesViewController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
 }

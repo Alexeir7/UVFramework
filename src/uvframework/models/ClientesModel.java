@@ -42,7 +42,7 @@ public class ClientesModel {
     public static ResultSet listarClientes (){
         
         try {
-            String sqlSelect = "select * from clientes;";
+            String sqlSelect = "select nombreCliente, telefono,correo from clientes;";
             PreparedStatement ps = MySQLConn.conn.prepareStatement(sqlSelect);
             ResultSet rs = ps.executeQuery(sqlSelect);
             return rs;
