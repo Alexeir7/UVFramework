@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,20 +9,23 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="314.0" prefWidth="495.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="250.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uvframework.controllers.MenuViewController">
    <children>
-      <Button layoutX="273.0" layoutY="118.0" mnemonicParsing="false" onAction="#ClientesBtnClick" prefHeight="89.0" prefWidth="154.0" text="Clientes">
+      <Button layoutX="272.0" layoutY="74.0" mnemonicParsing="false" onAction="#ClientesBtnClick" prefHeight="90.0" prefWidth="195.0" text="Clientes" AnchorPane.rightAnchor="20.0">
          <font>
             <Font size="19.0" />
          </font>
       </Button>
-      <Button layoutX="435.0" layoutY="276.0" mnemonicParsing="false" onAction="#SalirBtnClick" prefHeight="25.0" prefWidth="50.0" text="Salir" />
-      <Button layoutX="70.0" layoutY="118.0" mnemonicParsing="false" onAction="#UserBtnClick" prefHeight="89.0" prefWidth="154.0" text="Usuarios">
+      <Button defaultButton="true" layoutX="144.0" layoutY="230.0" mnemonicParsing="false" onAction="#SalirBtnClick" prefHeight="35.0" prefWidth="120.0" text="Salir" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <effect>
+            <SepiaTone />
+         </effect></Button>
+      <Button layoutX="69.0" layoutY="74.0" mnemonicParsing="false" onAction="#UsuarioBtnClick" prefHeight="90.0" prefWidth="195.0" text="Usuarios" AnchorPane.leftAnchor="20.0">
          <font>
             <Font size="19.0" />
          </font>
       </Button>
-      <Label layoutX="205.0" layoutY="49.0" text="Menu">
+      <Label layoutX="183.0" layoutY="14.0" text="Menu" AnchorPane.topAnchor="20.0">
          <font>
             <Font size="33.0" />
          </font>

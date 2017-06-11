@@ -7,30 +7,20 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="738.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uvframework.controllers.ClientesViewController">
    <children>
-      <Label layoutX="293.0" layoutY="22.0" prefHeight="49.0" prefWidth="122.0" text="Clientes" AnchorPane.leftAnchor="293.0" AnchorPane.rightAnchor="236.0" AnchorPane.topAnchor="20.0">
+      <Label layoutX="143.0" layoutY="20.0" prefHeight="49.0" prefWidth="115.0" text="Clientes" AnchorPane.topAnchor="20.0">
          <font>
             <Font size="33.0" />
          </font>
       </Label>
-      <Label layoutX="152.0" layoutY="103.0" text="Identidad" />
-      <Label layoutX="155.0" layoutY="152.0" text="Nombre" />
-      <Label layoutX="154.0" layoutY="190.0" text="Telefono" />
-      <Label layoutX="153.0" layoutY="228.0" text="Direccion" />
-      <Label layoutX="160.0" layoutY="266.0" text="Correo" />
-      <TextField fx:id="txtIdentidad" layoutX="234.0" layoutY="98.0" prefHeight="25.0" prefWidth="228.0" />
-      <TextField fx:id="txtNombre" layoutX="234.0" layoutY="143.0" prefHeight="25.0" prefWidth="228.0" />
-      <TextField fx:id="txtTelefono" layoutX="234.0" layoutY="181.0" prefHeight="25.0" prefWidth="228.0" />
-      <TextField fx:id="txtDireccion" layoutX="234.0" layoutY="219.0" prefHeight="25.0" prefWidth="228.0" />
-      <TextField fx:id="txtCorreo" layoutX="234.0" layoutY="257.0" prefHeight="25.0" prefWidth="228.0" />
-      <Button layoutX="177.0" layoutY="335.0" mnemonicParsing="false" onAction="#GuardarCBtnClick" prefHeight="34.0" prefWidth="115.0" text="Guardar" />
-      <Button layoutX="405.0" layoutY="335.0" mnemonicParsing="false" onAction="#RegresarMBtnClick" prefHeight="34.0" prefWidth="115.0" text="Regresar" />
-      <TableView layoutX="185.0" layoutY="420.0" prefHeight="302.0" prefWidth="611.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
-        <columns>
-          <TableColumn prefWidth="294.0" text="C1" />
-          <TableColumn minWidth="0.0" prefWidth="316.0" text="C2" />
-        </columns>
-      </TableView>
+      <TextField fx:id="txtIdentidad" layoutX="86.0" layoutY="97.0" prefHeight="25.0" prefWidth="228.0" promptText="Identidad" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="95.0" />
+      <TextField fx:id="txtNombre" layoutX="90.0" layoutY="140.0" prefHeight="25.0" prefWidth="228.0" promptText="Nombre" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <TextField fx:id="txtTelefono" layoutX="90.0" layoutY="185.0" prefHeight="25.0" prefWidth="228.0" promptText="Numero de Telefono" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <TextField fx:id="txtDireccion" layoutX="90.0" layoutY="226.0" prefHeight="25.0" prefWidth="228.0" promptText="Dirección" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <TextField fx:id="txtCorreo" layoutX="90.0" layoutY="266.0" prefHeight="25.0" prefWidth="228.0" promptText="Correo Electronico" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Button layoutX="20.0" layoutY="329.0" mnemonicParsing="false" onAction="#GuardarBtnClick" prefHeight="35.0" prefWidth="115.0" text="Guardar" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" />
+      <Button layoutX="135.0" layoutY="383.0" mnemonicParsing="false" onAction="#RegresarMBtnClick" prefHeight="35.0" prefWidth="115.0" text="Regresar" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Button layoutX="143.0" layoutY="345.0" mnemonicParsing="false" onAction="#ListarBtnClick" prefHeight="35.0" prefWidth="115.0" text="Listar" AnchorPane.bottomAnchor="20.0" />
    </children>
 </AnchorPane>
