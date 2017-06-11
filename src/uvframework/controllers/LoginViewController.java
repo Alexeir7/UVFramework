@@ -39,6 +39,8 @@ public class LoginViewController implements Initializable {
             System.out.println("Bienvenido " + dbuser.UsrNom + "!");
             WindowsManager.getStage("/menu").show();
             WindowsManager.getStage("/login").close();
+            User.setText("");
+            Password.setText("");
         } else {
             System.out.println("Usuario no Valido!");
         }

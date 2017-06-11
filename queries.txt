@@ -1,1 +1,1 @@
-INSERT INTO `mydb`.`usuario` (`UsrUsr`, `UsrNom`, `UsrPwd`) VALUES ('admin', 'admin', '12345678');
+INSERT INTO `usuario` (`UsrUsr`, `UsrNom`, `UsrPwd`) VALUES ('admin', 'admin', '12345678');

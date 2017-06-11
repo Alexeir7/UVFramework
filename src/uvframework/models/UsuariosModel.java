@@ -50,9 +50,8 @@ public class UsuariosModel {
     
     public static ResultSet ImprimirUsuarios(){
         
-        
         try {
-            String qry = "SELECT * FROM usuario;";
+            String qry = "SELECT UsrUsr FROM usuario;";
             
             PreparedStatement ps =  MySQLConn.conn.prepareStatement(qry);
             
@@ -63,14 +62,12 @@ public class UsuariosModel {
             Logger.getLogger(UsuariosModel.class.getName()).log(Level.SEVERE, null, ex);
             return null;
         }
-        
-    
     }
     
     public static Boolean insertarUsuario(UsuarioEntity usuario){
         
         try {
-            String sqlInsert = "insert into usuario UsrUsr, UsrNom, UsrPwd values (?, ?, ?);";
+            String sqlInsert = "INSERT INTO usuario (UsrUsr, UsrNom, UsrPwd) VALUES ( ?, ?, ?);";
             
             PreparedStatement ps = MySQLConn.conn.prepareStatement(sqlInsert);
             
@@ -78,7 +75,7 @@ public class UsuariosModel {
             ps.setString(2, usuario.UsrNom);
             ps.setString(3, usuario.UsrPwd);
             
-            ResultSet rs = ps.executeQuery(sqlInsert);
+            ps.executeUpdate();
             
             return true;
         } catch (SQLException ex) {
@@ -86,6 +83,5 @@ public class UsuariosModel {
             return false;
             
         }
-    
     }
 }

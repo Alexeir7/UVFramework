@@ -10,7 +10,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import sun.net.www.content.text.plain;
 import uvframework.models.entities.ClientesEntity;
 import uvframework.tools.MySQLConn;
 
@@ -23,7 +22,7 @@ public class ClientesModel {
     public static Boolean insertarClientes( ClientesEntity cliente){
         
         try {
-            String sqlInsert = "insert into clientes identidad, nombreCliente, telefono, direccion, correo values (?,?,?,?,?);";
+            String sqlInsert = "INSERT INTO clientes (identidad, nombreCliente, telefono, direccion, correo) values (?,?,?,?,?);";
             PreparedStatement ps = MySQLConn.conn.prepareStatement(sqlInsert);
             ps.setString(1, cliente.identidad);
             ps.setString(2, cliente.nombre);
@@ -31,7 +30,7 @@ public class ClientesModel {
             ps.setString(4, cliente.direccion);
             ps.setString(5, cliente.correo);
             
-            ResultSet rs = ps.executeQuery(sqlInsert);
+            ps.executeUpdate();
             
             return true;
         } catch (SQLException ex) {

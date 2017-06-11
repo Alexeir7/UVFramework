@@ -9,16 +9,16 @@
 
 <AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uvframework.controllers.UsuariosViewController">
    <children>
-      <Button layoutX="297.0" layoutY="245.0" mnemonicParsing="false" onAction="#RegresarBtnClick" prefHeight="35.0" prefWidth="115.0" text="Regresar" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
-      <Button layoutX="185.0" layoutY="245.0" mnemonicParsing="false" onAction="#GuardarBtnClick" prefHeight="35.0" prefWidth="115.0" text="Guardar" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" />
-      <TextField fx:id="txtUser" layoutX="21.0" layoutY="135.0" prefHeight="25.0" prefWidth="228.0" promptText="Nombre" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="19.0" />
-      <TextField fx:id="txtNombre" layoutX="170.0" layoutY="109.0" prefHeight="25.0" prefWidth="228.0" promptText="Usuario" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="95.0" />
       <Label layoutX="138.0" layoutY="28.0" text="Usuarios" AnchorPane.topAnchor="20.0">
          <font>
             <Font size="33.0" />
          </font>
       </Label>
+      <TextField fx:id="txtUsuario" layoutX="170.0" layoutY="109.0" prefHeight="25.0" prefWidth="228.0" promptText="Usuario" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="95.0" />
+      <TextField fx:id="txtNombre" layoutX="21.0" layoutY="135.0" prefHeight="25.0" prefWidth="228.0" promptText="Nombre" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="19.0" />
       <PasswordField fx:id="txtContraseña" layoutX="107.0" layoutY="179.0" promptText="Contraseña" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Button layoutX="185.0" layoutY="245.0" mnemonicParsing="false" onAction="#GuardarBtnClick" prefHeight="35.0" prefWidth="115.0" text="Guardar" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" />
       <Button layoutX="143.0" layoutY="335.0" mnemonicParsing="false" onAction="#ListarBtnClick" prefHeight="35.0" prefWidth="115.0" text="Listar" AnchorPane.bottomAnchor="20.0" />
+      <Button layoutX="297.0" layoutY="245.0" mnemonicParsing="false" onAction="#RegresarBtnClick" prefHeight="35.0" prefWidth="115.0" text="Regresar" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
    </children>
 </AnchorPane>

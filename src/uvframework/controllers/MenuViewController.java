@@ -5,7 +5,11 @@
  */
 package uvframework.controllers;
 
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.fxml.FXML;
+import uvframework.tools.MySQLConn;
 import uvframework.tools.WindowsManager;
 
 /**
@@ -16,7 +20,6 @@ public class MenuViewController {
     
     @FXML
     private void ClientesBtnClick(){
-        
         WindowsManager.getStage("/menu").close();
         WindowsManager.getStage("/clientes").show();
     }
@@ -31,6 +34,11 @@ public class MenuViewController {
     private void SalirBtnClick(){
         WindowsManager.getStage("/menu").close();
         WindowsManager.getStage("/login").show();
+        try {
+            MySQLConn.conn.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(MenuViewController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
 }
