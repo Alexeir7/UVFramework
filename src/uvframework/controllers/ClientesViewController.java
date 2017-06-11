@@ -6,13 +6,23 @@
 package uvframework.controllers;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.TextField;
+import uvframework.models.ClientesModel;
+import uvframework.models.entities.ClientesEntity;
 import uvframework.tools.WindowsManager;
+
 
 /**
  *
  * @author alexe
  */
 public class ClientesViewController {
+      
+    @FXML private TextField txtIdentidad;
+    @FXML private TextField txtNombre;
+    @FXML private TextField txtTelefono;
+    @FXML private TextField txtDireccion;
+    @FXML private TextField txtCorreo;
     
     @FXML
     private void RegresarBtnClick(){
@@ -22,7 +32,21 @@ public class ClientesViewController {
     
     @FXML
     private void GuardarBtnClick(){
-        System.out.println("guardar");
+         ClientesEntity cliente = new ClientesEntity();
+        
+            cliente.identidad =  txtIdentidad.getText();
+            cliente.nombre = txtNombre.getText();
+            cliente.telefono = txtTelefono.getText();
+            cliente.direccion = txtDireccion.getText();
+            cliente.correo = txtCorreo.getText();
+        
+        if (ClientesModel.insertarClientes(cliente)) {
+            
+            System.out.println("guardado exitoso!");
+            
+        } else {
+            System.out.println("error al guardar!");
+        }
     }
     
     @FXML
