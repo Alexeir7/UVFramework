@@ -22,7 +22,7 @@ public class MySQLConn {
     public static Boolean InitConn() {
 
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mydb", "root", "1234");
+            conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/mydb", "root", "");
             
             return true;
 
