@@ -51,7 +51,7 @@ public class UsuariosModel {
     public static ResultSet ImprimirUsuarios(){
         
         try {
-            String qry = "SELECT UsrUsr FROM usuario;";
+            String qry = "SELECT UsrUsr, UsrNom FROM usuario;";
             
             PreparedStatement ps =  MySQLConn.conn.prepareStatement(qry);
             

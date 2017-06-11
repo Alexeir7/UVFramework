@@ -5,9 +5,14 @@
  */
 package uvframework.controllers;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import uvframework.models.ClientesModel;
 import uvframework.models.UsuariosModel;
 import uvframework.models.entities.UsuarioEntity;
 import uvframework.tools.WindowsManager;
@@ -27,6 +32,9 @@ public class UsuariosViewController {
         
         WindowsManager.getStage("/usuarios").close();
         WindowsManager.getStage("/menu").show();
+        txtUsuario.setText("");
+        txtNombre.setText("");
+        txtContraseña.setText("");
     }
     
     @FXML
@@ -49,7 +57,15 @@ public class UsuariosViewController {
     
     @FXML
     private void ListarBtnClick(){
-        System.out.println("listar");
+         try {
+            ResultSet rs=UsuariosModel.ImprimirUsuarios();
+            while(rs.next()){
+                System.out.println(rs.getString("UsrUsr"));
+                System.out.println(rs.getString("UsrNom"));
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(UsuariosViewController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
 }
