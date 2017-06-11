@@ -34,11 +34,6 @@ public class MenuViewController {
     private void SalirBtnClick(){
         WindowsManager.getStage("/menu").close();
         WindowsManager.getStage("/login").show();
-        try {
-            MySQLConn.conn.close();
-        } catch (SQLException ex) {
-            Logger.getLogger(MenuViewController.class.getName()).log(Level.SEVERE, null, ex);
-        }
     }
     
 }

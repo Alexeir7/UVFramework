@@ -11,6 +11,16 @@
 
 <AnchorPane id="AnchorPane" prefHeight="250.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uvframework.controllers.MenuViewController">
    <children>
+      <Label layoutX="183.0" layoutY="14.0" text="Menu" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="69.0" layoutY="74.0" mnemonicParsing="false" onAction="#UsuariosBtnClick" prefHeight="90.0" prefWidth="195.0" text="Usuarios" AnchorPane.leftAnchor="20.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
       <Button layoutX="272.0" layoutY="74.0" mnemonicParsing="false" onAction="#ClientesBtnClick" prefHeight="90.0" prefWidth="195.0" text="Clientes" AnchorPane.rightAnchor="20.0">
          <font>
             <Font size="19.0" />
@@ -20,15 +30,5 @@
          <effect>
             <SepiaTone />
          </effect></Button>
-      <Button layoutX="69.0" layoutY="74.0" mnemonicParsing="false" onAction="#UsuariosBtnClick" prefHeight="90.0" prefWidth="195.0" text="Usuarios" AnchorPane.leftAnchor="20.0">
-         <font>
-            <Font size="19.0" />
-         </font>
-      </Button>
-      <Label layoutX="183.0" layoutY="14.0" text="Menu" AnchorPane.topAnchor="20.0">
-         <font>
-            <Font size="33.0" />
-         </font>
-      </Label>
    </children>
 </AnchorPane>
