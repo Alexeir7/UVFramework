@@ -12,6 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
 import uvframework.models.UsuariosModel;
 import uvframework.models.entities.UsuarioEntity;
+import uvframework.tools.WindowsManager;
 
 /**
  *
@@ -36,6 +37,8 @@ public class LoginViewController implements Initializable {
         if (dbuser != null) {
             System.out.println("Usuario Valido!");
             System.out.println("Bienvenido " + dbuser.UsrNom + "!");
+            WindowsManager.getStage("/menu").show();
+            WindowsManager.getStage("/login").close();
         } else {
             System.out.println("Usuario no Valido!");
         }

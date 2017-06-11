@@ -20,7 +20,7 @@
          <effect>
             <SepiaTone />
          </effect></Button>
-      <Button layoutX="69.0" layoutY="74.0" mnemonicParsing="false" onAction="#UsuarioBtnClick" prefHeight="90.0" prefWidth="195.0" text="Usuarios" AnchorPane.leftAnchor="20.0">
+      <Button layoutX="69.0" layoutY="74.0" mnemonicParsing="false" onAction="#UsuariosBtnClick" prefHeight="90.0" prefWidth="195.0" text="Usuarios" AnchorPane.leftAnchor="20.0">
          <font>
             <Font size="19.0" />
          </font>

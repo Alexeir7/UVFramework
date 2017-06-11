@@ -6,7 +6,6 @@
 package uvframework.tools;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
@@ -51,8 +50,10 @@ public class WindowsManager {
 
         switch(path){
             case "/login": fullpath="views/LoginView.fxml"; break;
+            case "/menu": fullpath="views/MenuView.fxml"; break;
+            case "/usuarios": fullpath="views/UsuariosView.fxml"; break;
+            case "/clientes": fullpath= "views/ClientesView.fxml"; break;
             case "/main": fullpath="views/LoginView.fxml"; break;
-            case "/usuario/buscar": fullpath="views/LoginView.fxml"; break;
             default: fullpath="views/LoginView.fxml";
         }
         

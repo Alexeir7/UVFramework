@@ -20,7 +20,7 @@
       <TextField fx:id="txtDireccion" layoutX="90.0" layoutY="226.0" prefHeight="25.0" prefWidth="228.0" promptText="Dirección" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
       <TextField fx:id="txtCorreo" layoutX="90.0" layoutY="266.0" prefHeight="25.0" prefWidth="228.0" promptText="Correo Electronico" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
       <Button layoutX="20.0" layoutY="329.0" mnemonicParsing="false" onAction="#GuardarBtnClick" prefHeight="35.0" prefWidth="115.0" text="Guardar" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" />
-      <Button layoutX="135.0" layoutY="383.0" mnemonicParsing="false" onAction="#RegresarMBtnClick" prefHeight="35.0" prefWidth="115.0" text="Regresar" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Button layoutX="135.0" layoutY="383.0" mnemonicParsing="false" onAction="#RegresarBtnClick" prefHeight="35.0" prefWidth="115.0" text="Regresar" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
       <Button layoutX="143.0" layoutY="345.0" mnemonicParsing="false" onAction="#ListarBtnClick" prefHeight="35.0" prefWidth="115.0" text="Listar" AnchorPane.bottomAnchor="20.0" />
    </children>
 </AnchorPane>
